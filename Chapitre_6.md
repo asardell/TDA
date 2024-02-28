@@ -1,0 +1,172 @@
+# Analyses multidimensionnelles (ACP, Clustering, Régression)
+
+## Objectifs
+Voici les objectifs de ce TD :
+- [ ] Construire et analyser une ACP
+- [ ] Construire et analyser un clustering
+- [ ] Modéliser une régression linéaire pour prédire
+
+
+## Exercice 1 - Importer les données
+
+1. Importez le jeu de données *fromage.txt* à l’aide de l'assistant RStudio.
+<details>
+<summary>Correction</summary>
+
+```r
+fromage <- read.delim("fromage.txt")
+View(fromage)
+```
+</details>
+
+
+2. Faire une résumé des données.
+<details>
+<summary>Correction</summary>
+
+```r
+summary(fromage)
+```
+</details>
+
+3. Calculer la matrice de corrélation sur les variables quantitatives.
+<details>
+<summary>Correction</summary>
+
+```r
+ls_quantiColonne <- colnames(fromage)[-1]
+cor(fromage[    , ls_quantiColonne   ])
+```
+</details>
+
+## Exercice 2 - L'ACP
+
+:warning: Plus d'infos dans les liens utiles !
+
+1. Installer le package `factoextra` puis `FactoMineR` s'ils ne sont pas encore installés.
+<details>
+<summary>Correction</summary>
+
+```r
+# Liste des packages à installer
+packages <- c("factoextra", "FactoMineR")
+
+# Vérifier et installer chaque package
+for (pkg in packages) {
+  if (!requireNamespace(pkg, quietly = TRUE)) {
+    install.packages(pkg)
+  }
+}
+
+library(factoextra)
+library(FactoMineR)
+```
+</details>
+
+2. Calculer l'ACP avec la fonction `PCA()`.
+<details>
+<summary>Correction</summary>
+
+```r
+res.pca <- PCA(fromage[  , ls_quantiColonne  ], scale.unit = TRUE, ncp = 9, graph = TRUE)
+```
+</details>
+
+3. Afficher les différents éléments calculés disponibles dans l'objet `res.pca`.
+<details>
+<summary>Correction</summary>
+
+```r
+attributes(res.pca)
+```
+</details>
+
+4. Reproduire les tutoriels en lien utiles mais avec les données sur les fromages.
+
+## Exercice 3 - Le Clustering
+
+:warning: utiliser le tutoriel en lien utile uniquement sur la méthode des `kmeans` et `cah` pour analyser si les deux méthodes donnent les mêmes résultats
+
+## Exercice 4 - Régression linénaire
+
+1. Construire un modèle avec la fonction `lm()` pour prédire les `calories` en fonction des `lipides`.
+<details>
+<summary>Correction</summary>
+
+```r
+model_simple <- lm(calories ~ lipides, data = fromage)
+```
+</details>
+
+2. Analyser les coefficients de la régression
+<details>
+<summary>Correction</summary>
+
+```r
+attributes(model_simple)
+model_simple$coefficients
+```
+</details>
+
+3. Prédire sur les mêmes données pour tester les performances du modèle en utilisant la fonction `predict()`
+<details>
+<summary>Correction</summary>
+
+```r
+pred <- predict(object = model_simple, newdata = fromage)
+```
+</details>
+
+4. Afficher un nuage de point entre les valeurs observées et prédites.
+<details>
+<summary>Correction</summary>
+
+```r
+plot(x = fromage$calories, y = pred)
+```
+
+5. Calculer deux métriques de performance, le `RMSE` et la coefficient de corrélation entre les valeurs observées et prédites.
+<details>
+<summary>Correction</summary>
+
+```r
+SE <- (fromage$calories - pred)^2
+MSE <- mean(SE)
+RMSE <- sqrt(MSE)
+RMSE
+cor(x = fromage$calories, y = pred)
+```
+</details>
+
+6. Même questions que les précédentes mais avec une régression linéaire multiple pour prédire les calories en fonction de toutes les autres variables quantitatives.
+<details>
+<summary>Correction</summary>
+
+```r
+model_simple <- lm(calories ~ ., data = fromage)
+attributes(model_simple)
+model_simple$coefficients
+pred <- predict(object = model_simple, newdata = fromage)
+
+plot(x = fromage$calories, y = pred)
+SE <- (fromage$calories - pred)^2
+MSE <- mean(SE)
+RMSE <- sqrt(MSE)
+cor(x = fromage$calories, y = pred)
+```
+</details>
+
+
+## Liens utiles
+
+Voici quelques liens utiles :
+
+- [Cours sur la programmation R](https://asardell.github.io/programmation-r/)
+- [ACP rapide ](http://www.sthda.com/french/articles/38-methodes-des-composantes-principales-dans-r-guide-pratique/82-acp-dans-r-avec-factominer-scripts-faciles-et-cours/)
+- [ACP en détail](http://www.sthda.com/french/articles/38-methodes-des-composantes-principales-dans-r-guide-pratique/73-acp-analyse-en-composantes-principales-avec-r-l-essentiel/)
+- [Les analyses factorielles](http://www.sthda.com/french/articles/38-methodes-des-composantes-principales-dans-r-guide-pratique/)
+- [CAH express avec Ricco](https://eric.univ-lyon2.fr/ricco/cours/didacticiels/R/cah_kmeans_avec_r.pdf)
+
+
+
+
