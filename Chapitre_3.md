@@ -8,7 +8,7 @@ Voici les objectifs de ce TD :
 - [ ] Sélection et filtre sur un dataframe
 - [ ] Trier un dataframe 
 
-1. [TD2](#td2)
+1. [Importer et manipulation de dataframe](#importer-et-manipulation-de-dataframe)
    1. [Objectifs](#objectifs)
    2. [Exercice 1 - Importer des données](#exercice-1---importer-des-données)
       1. [Mémo](#mémo)
@@ -17,9 +17,11 @@ Voici les objectifs de ce TD :
    3. [Exercice 2 - Statistique](#exercice-2---statistique)
       1. [Mémo](#mémo-1)
       2. [Exercice sur les Fonctions en R](#exercice-sur-les-fonctions-en-r-1)
+         1. [Les fonctions `cor()`, `corrplot()`, `install.packages()` et `plot()`.](#les-fonctions-cor-corrplot-installpackages-et-plot)
    4. [Exercice 3 - Manipulation de data frame](#exercice-3---manipulation-de-data-frame)
       1. [Mémo](#mémo-2)
       2. [Exercice sur les Fonctions en R](#exercice-sur-les-fonctions-en-r-2)
+         1. [La fonction `order()`.](#la-fonction-order)
    5. [Exercice 4 - GOAT](#exercice-4---goat)
    6. [Liens utiles](#liens-utiles)
 

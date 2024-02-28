@@ -5,6 +5,11 @@ Voici les objectifs de ce TD :
 - [ ] Comprendre les formats date et time
 - [ ] Comprendre comment manipuler les chaînes de caractères
 
+1. [Gestion des dates et chaîne de caractères](#gestion-des-dates-et-chaîne-de-caractères)
+   1. [Objectifs](#objectifs)
+   2. [Exercice 1 - Les formats date](#exercice-1---les-formats-date)
+   3. [Exercice 2 - Parcourir le lien utile sur les chaînes de caratctères](#exercice-2---parcourir-le-lien-utile-sur-les-chaînes-de-caratctères)
+   4. [Liens utiles](#liens-utiles)
 
 
 ## Exercice 1 - Les formats date

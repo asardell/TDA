@@ -7,7 +7,7 @@ Voici les objectifs de ce chapitre :
 - [ ] Sélection et filtre sur un dataframe 
 - [ ] Importer et exporter un dataframe
 
-1. [TP1](#tp1)
+1. [Les bases des dataframes](#les-bases-des-dataframes)
    1. [Objectifs](#objectifs)
    2. [Exercice 1 - Utilisation d'un dataframe existant un dataframe](#exercice-1---utilisation-dun-dataframe-existant-un-dataframe)
       1. [Mémo](#mémo)
@@ -20,6 +20,7 @@ Voici les objectifs de ce chapitre :
             1. [Filtre sur les Animes](#filtre-sur-les-animes)
             2. [Filtre sur les Animes](#filtre-sur-les-animes-1)
          3. [Les fonctions `rbind()` et `write.table()`](#les-fonctions-rbind-et-writetable)
+   4. [Liens utiles](#liens-utiles)
 
     
 

@@ -7,6 +7,13 @@ Voici les objectifs de ce chapitre :
 - [ ] Opération d'agrégation sur une dataframe
 - [ ] Découvrir des packages utiles (dplyr, ggplot2 et esquisse)
 
+1. [Dplyr, Ggplot2 et Esquisse](#dplyr-ggplot2-et-esquisse)
+   1. [Objectifs](#objectifs)
+   2. [Exercice 1 - Importer les données](#exercice-1---importer-les-données)
+   3. [Exercice 2 - Utiliser Dplyr pour trier et filtrer](#exercice-2---utiliser-dplyr-pour-trier-et-filtrer)
+   4. [Exercice 3 - Utiliser Dplyr et le pipe %\>% pour agréger](#exercice-3---utiliser-dplyr-et-le-pipe--pour-agréger)
+   5. [Exercice 4 - Comprendre ggplot2 avec esquisse](#exercice-4---comprendre-ggplot2-avec-esquisse)
+   6. [Liens utiles](#liens-utiles)
 
 
 ## Exercice 1 - Importer les données

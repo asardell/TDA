@@ -6,6 +6,12 @@ Voici les objectifs de ce TD :
 - [ ] Créer une structure conditionelle
 - [ ] Créer des boucles
 
+1. [Algorithmique](#algorithmique)
+   1. [Objectifs](#objectifs)
+   2. [Exercice 1 - Créer des fonctions et structures conditionnelles](#exercice-1---créer-des-fonctions-et-structures-conditionnelles)
+   3. [Exercice 2 - Créer des boucles](#exercice-2---créer-des-boucles)
+   4. [Liens utiles](#liens-utiles)
+
 
 ## Exercice 1 - Créer des fonctions et structures conditionnelles
 

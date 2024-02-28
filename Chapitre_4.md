@@ -6,7 +6,7 @@ Voici les objectifs de ce chapitre :
 - [ ] Sélection et filtre sur un dataframe
 - [ ] Trier un dataframe
 
-1. [TP2 - Rappel et cas pratique](#tp2---rappel-et-cas-pratique)
+1. [Rappel et cas pratique](#rappel-et-cas-pratique)
    1. [Objectifs](#objectifs)
    2. [Exercice 1 - Importer les données](#exercice-1---importer-les-données)
    3. [Exercice 2 - Statistiques descriptives](#exercice-2---statistiques-descriptives)

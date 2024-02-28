@@ -6,6 +6,14 @@ Voici les objectifs de ce TD :
 - [ ] Construire et analyser un clustering
 - [ ] Modéliser une régression linéaire pour prédire
 
+1. [Analyses multidimensionnelles (ACP, Clustering, Régression)](#analyses-multidimensionnelles-acp-clustering-régression)
+   1. [Objectifs](#objectifs)
+   2. [Exercice 1 - Importer les données](#exercice-1---importer-les-données)
+   3. [Exercice 2 - L'ACP](#exercice-2---lacp)
+   4. [Exercice 3 - Le Clustering](#exercice-3---le-clustering)
+   5. [Exercice 4 - Régression linénaire](#exercice-4---régression-linénaire)
+   6. [Liens utiles](#liens-utiles)
+
 
 ## Exercice 1 - Importer les données
 

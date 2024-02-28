@@ -8,7 +8,7 @@ Voici les objectifs de ce chapitre :
 - [ ] manipuler des vecteurs
 - [ ] calculer des statistiques descriptives
 
-1. [TD1](#td1)
+1. [Les bases de R et les vecteurs](#les-bases-de-r-et-les-vecteurs)
    1. [Objectifs](#objectifs)
    2. [Exercice 1 - Les objets et les vecteurs](#exercice-1---les-objets-et-les-vecteurs)
       1. [Mémo](#mémo)
@@ -28,6 +28,7 @@ Voici les objectifs de ce chapitre :
          2. [Les fonctions `rnorm()`, `mean()`, `sd()`,  `hist()`, `quantile()`](#les-fonctions-rnorm-mean-sd--hist-quantile)
          3. [Les fonctions `sum()` , `round()`](#les-fonctions-sum--round)
          4. [Les fonctions `sample()`, `table()`, `prop.table()` , `unique()`, `sort()`](#les-fonctions-sample-table-proptable--unique-sort)
+   5. [Liens utiles](#liens-utiles)
 
 
 
