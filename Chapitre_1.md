@@ -74,7 +74,7 @@ print(resultat)
 
 ```r
 A <- 7.2
-b <- 10.1
+B <- 10.1
 print("Le langage R est sensible à la casse (majuscule/minuscule) car nous avons 4 objets a,b,A et B")
 ```
 </details>
