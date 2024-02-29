@@ -650,7 +650,8 @@ unique(simulation)
 <summary>Correction</summary>
 
 ```r
-table(simulation)
+resultat = table(simulation)
+sort(resultat, decreasing = TRUE)
 ```
 </details>
 
