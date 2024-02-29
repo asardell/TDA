@@ -115,7 +115,7 @@ iris[ , c("Sepal.Length","Species")]
 ```r
 iris[ c(100,103,105) , ]
 ```
-</details
+</details>
 
 9. Afficher uniquement les lignes 50 à 100.
 <details>
