@@ -12,14 +12,14 @@ Voici les objectifs de ce module :
 - [x] Calculer des statistiques
 - [x] Construire des graphiques
 - [x] Utiliser des structures algorithmiques
-- [x] Versionner et documenter son code avec Git
+- [x] Tester des méthodes d'analyses multidimensionnelles
 
 ## Planning
 
 1. Chapitre 1 : Les bases de R et les vecteurs
 2. Chapitre 2 : Les bases des dataframes
 3. Chapitre 3 : Importer et manipulation de dataframe
-4. Chapitre 4 : Rappel et cas pratique
+4. Chapitre 4 : Rappel et cas pratique (FACULTATIF)
 5. Chapitre 5 : Dplyr, Ggplot2 et Esquisse
 6. Chapitre 6 : Analyses multidimensionnelles (ACP, Clustering, Régression)
 7. Chapitre 7 : Algorithmique
