@@ -114,7 +114,7 @@ rm(list = ls())
 ### Exercice sur les Fonctions en R
 
 
-#### Les fonctions `c()`,  `class`
+#### Les fonctions `c()`,  `class()`
 
 1. Créer un vecteur numérique de nombres de 1 à 5 et afficher sa classe. Afficher le troisième élément du vecteur.
 <details>
@@ -128,12 +128,12 @@ vecteur[3]
 </details>
 
 
-1. Créer un vecteur `v1` avec les nombres de 1 à 5.
+1. Créer un vecteur `v1` avec les nombres de 1 à 20.
 <details>
 <summary>Correction</summary>
 
 ```r
-v1 <- 1:5
+v1 <- 1:20
 ```
 </details>
 
@@ -335,7 +335,7 @@ length(ma_sequence)
 </details>
 
 
-#### Les fonctions `c()`, `rep()`
+#### Les fonctions `c()`, `rep()` (facultatif)
 
 1. Répéter le nombre 3 cinq fois et stocker le résultat dans un vecteur.
 <details>
