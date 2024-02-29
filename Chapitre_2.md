@@ -412,7 +412,7 @@ dfManga <- dfManga[ , c("Title","Score","Vote","Ranked")]
 
 ```r
 dfAnime$Type <- "Anime"
-dfManga$Type <- "Manga
+dfManga$Type <- "Manga"
 ```
 </details>
 
