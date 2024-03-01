@@ -197,6 +197,7 @@ Voici quelques liens utiles :
 
 - [Cours sur la programmation R](https://asardell.github.io/programmation-r/)
 - [ACP en détail](http://www.sthda.com/english/articles/31-principal-component-methods-in-r-practical-guide/112-pca-principal-component-analysis-essentials/)
+- [Méthodes des réductions de dimensions avec R](https://www.r-bloggers.com/2017/02/factoextra-r-package-easy-multivariate-data-analyses-and-elegant-visualization/)
 - [CAH express avec Ricco](https://eric.univ-lyon2.fr/ricco/cours/didacticiels/R/cah_kmeans_avec_r.pdf)
 
 
