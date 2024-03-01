@@ -18,6 +18,14 @@ Voici les objectifs de ce chapitre :
 
 ## Exercice 1 - Importer les données
 
+### Mémo
+| Nom de la commande | Description | Arguments Pertinents | Exemple |
+|--------------------|-------------|----------------------|---------|
+| `read_excel()` | Lit un fichier Excel dans R. | `path` : le chemin vers le fichier Excel, `sheet` : le nom ou l'index de la feuille à lire (par défaut la première feuille) | `readxl::read_excel(path = "/chemin/vers/votre/fichier.xlsx", sheet = "Nom_de_la_feuille")` |
+| `as.factor()` | Convertit un vecteur en facteur. | `x` : le vecteur à convertir | `as.factor(x = c("A", "B", "A", "C"))` |
+
+### Exercice sur les Fonctions en R
+
 1. Importez le jeu de données *pokemon.xlsx* à l’aide du package `readxl`.
 
 <details>
@@ -73,6 +81,16 @@ summary(pokemon)
 </details>
 
 ## Exercice 2 - Utiliser Dplyr pour trier et filtrer
+
+### Mémo
+| Nom de la commande | Description | Arguments Pertinents | Exemple |
+|--------------------|-------------|----------------------|---------|
+| `select()` | Sélectionne des colonnes d'un jeu de données. | `data` : le jeu de données, `...` : les colonnes à sélectionner | `dplyr::select(data = dataframe, col1, col2)` |
+| `slice()` | Sélectionne des lignes spécifiques d'un jeu de données. | `data` : le jeu de données, `rows` : les rangs à sélectionner | `dplyr::slice(data = dataframe, rows = c(1, 3, 5))` |
+| `filter()` | Filtre les lignes d'un jeu de données en fonction de conditions spécifiques. | `data` : le jeu de données, `...` : les conditions de filtrage | `dplyr::filter(data = dataframe, col1 > 10)` |
+| `arrange()` | Trie les lignes d'un jeu de données en fonction de variables spécifiques. | `data` : le jeu de données, `...` : les variables de tri | `dplyr::arrange(data = dataframe, col1)` |
+
+### Exercice sur les Fonctions en R
 
 1. Installer le package `dplyr` s'il n'est pas encore installé.
 <details>
@@ -241,6 +259,16 @@ View(resultat)
 
 ## Exercice 3 - Utiliser Dplyr et le pipe %>% pour agréger
 
+### Mémo
+| Nom de la commande | Description | Arguments Pertinents | Exemple |
+|--------------------|-------------|----------------------|---------|
+| `group_by()` | Crée des groupes de données en fonction de variables spécifiques. | `data` : le jeu de données, `...` : les variables de groupe | `dplyr::group_by(data = dataframe, col1)` |
+| `summarise()` | Résume les données groupées en effectuant des calculs. | `data` : le jeu de données, `...` : les calculs à effectuer | `dplyr::summarise(data = dataframe, mean_col1 = mean(col1))` |
+
+:warning: voici un raccourci pour écrire le pipe `%>%` : `CTRL` + `SHIFT` + `M`.
+
+### Exercice sur les Fonctions en R
+
 1. Calculez l’attack moyenne en fonction de la variable `type`, puis filtrez sur les 3 `types` avec les moyennes les plus élevées.
 <details>
 <summary>Correction</summary>
@@ -308,6 +336,7 @@ pokemon %>%
     View()
 ```
 </details>
+
 
 ## Exercice 4 - Comprendre ggplot2 avec esquisse
 
