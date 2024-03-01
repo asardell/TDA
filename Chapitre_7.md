@@ -31,7 +31,19 @@ imc <- function(taille,poids) {
 <summary>Correction</summary>
 
 ```r
-
+create_plot <- function(x, titre) {
+  if (is.numeric(x) ) {
+    boxplot(x, main = titre)
+    dev.print(device = png,
+              file = paste0(titre,".png"),
+              width = 600)
+  } else {
+    barplot(table(x), main = titre)
+    dev.print(device = png,
+              file = paste0(titre,".png"),
+              width = 600)
+    } 
+}
 ```
 </details>
 
@@ -42,7 +54,10 @@ imc <- function(taille,poids) {
 <summary>Correction</summary>
 
 ```r
-
+for (colonne in colnames(iris)) {
+   create_plot(x = iris[, colonne],
+               titre = colonne)
+}
 ```
 </details>
 
@@ -51,6 +66,13 @@ imc <- function(taille,poids) {
 <summary>Correction</summary>
 
 ```r
+indice_colonne = 1
+while (indice_colonne <= ncol(iris)) {
+   iris_colonne_name = colnames(iris)[indice_colonne]
+   create_plot(x = iris[, iris_colonne_name],
+               titre = iris_colonne_name)
+   indice_colonne = indice_colonne + 1
+}
 ```
 </details>
 
