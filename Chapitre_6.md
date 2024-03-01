@@ -120,6 +120,34 @@ cor(fromage$magnesium, res.pca$ind$coord[ , 1])
 
 :warning: utiliser le tutoriel en lien utile uniquement sur la méthode des `kmeans` et `cah` pour analyser si les deux méthodes donnent les mêmes résultats
 
+<details>
+<summary>Correction</summary>
+
+```r
+#centrage réduction des données
+fromage.cr <- scale(fromage,center=T,scale=T)
+
+#matrice des distances entre individus
+d.fromage <- dist(fromage.cr)
+
+#utilisant le carré de la distance
+cah.ward <- hclust(d.fromage,method="ward.D2")
+
+#affichage dendrogramme
+plot(cah.ward) 
+
+#dendrogramme avec matérialisation des groupes
+rect.hclust(cah.ward,k=4)
+
+#découpage en 4 groupes
+groupes.cah <- cutree(cah.ward,k=4)
+
+#j'ajoute une colonne dans le dataframe
+fromage$cah = groupes.cah
+```
+</details>
+
+
 ## Exercice 4 - Régression linénaire
 
 1. Construire un modèle avec la fonction `lm()` pour prédire les `calories` en fonction des `lipides`.
