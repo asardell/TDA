@@ -187,7 +187,7 @@ View(resultat)
 <summary>Correction</summary>
 
 ```r
-resultat = subset(df, $Nom %in% c("France","Belgique"))
+resultat = subset(df, Nom %in% c("France","Belgique"))
 View(resultat)
 ```
 </details>
