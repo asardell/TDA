@@ -92,3 +92,13 @@ Voici quelques liens utiles :
 | `install.packages()` | Installe un package R depuis un dépôt CRAN ou local. | `pkgs` : le nom du package à installer, `repos` : l'URL du dépôt, `dependencies` : spécifie si les dépendances doivent également être installées (par défaut TRUE). | `install.packages("nom_du_package")` |
 | `library()` | Charge un package R déjà installé en mémoire pour être utilisé dans la session R courante. | `package` : le nom du package à charger. | `library(nom_du_package)` |
 | `order()` | Trie les éléments d'un vecteur et retourne les indices dans l'ordre croissant ou décroissant. | `x` : le vecteur à trier, `decreasing` : spécifie si le tri doit être effectué dans l'ordre décroissant (par défaut FALSE). | `indices_tri <- order(vecteur, decreasing = FALSE)` |
+| `read_excel()` | Lit un fichier Excel dans R. | `path` : le chemin vers le fichier Excel, `sheet` : le nom ou l'index de la feuille à lire (par défaut la première feuille) | `readxl::read_excel(path = "/chemin/vers/votre/fichier.xlsx", sheet = "Nom_de_la_feuille")` |
+| `as.factor()` | Convertit un vecteur en facteur. | `x` : le vecteur à convertir | `as.factor(x = c("A", "B", "A", "C"))` |
+| `select()` | Sélectionne des colonnes d'un jeu de données. | `data` : le jeu de données, `...` : les colonnes à sélectionner | `dplyr::select(data = dataframe, col1, col2)` |
+| `slice()` | Sélectionne des lignes spécifiques d'un jeu de données. | `data` : le jeu de données, `rows` : les rangs à sélectionner | `dplyr::slice(data = dataframe, rows = c(1, 3, 5))` |
+| `filter()` | Filtre les lignes d'un jeu de données en fonction de conditions spécifiques. | `data` : le jeu de données, `...` : les conditions de filtrage | `dplyr::filter(data = dataframe, col1 > 10)` |
+| `arrange()` | Trie les lignes d'un jeu de données en fonction de variables spécifiques. | `data` : le jeu de données, `...` : les variables de tri | `dplyr::arrange(data = dataframe, col1)` |
+| `is.na()` | Vérifie si les valeurs sont manquantes (NA). | `x` : vecteur ou objet à tester | `is.na(x = vecteur)` |
+| `!is.na()` | Vérifie si les valeurs ne sont pas manquantes (non-NA). | `x` : vecteur ou objet à tester | `!is.na(x = vecteur)` |
+| `group_by()` | Crée des groupes de données en fonction de variables spécifiques. | `data` : le jeu de données, `...` : les variables de groupe | `dplyr::group_by(data = dataframe, col1)` |
+| `summarise()` | Résume les données groupées en effectuant des calculs. | `data` : le jeu de données, `...` : les calculs à effectuer | `dplyr::summarise(data = dataframe, mean_col1 = mean(col1))` |

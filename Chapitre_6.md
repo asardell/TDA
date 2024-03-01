@@ -132,6 +132,7 @@ pred <- predict(object = model_simple, newdata = fromage)
 ```r
 plot(x = fromage$calories, y = pred)
 ```
+</details>
 
 5. Calculer deux métriques de performance, le `RMSE` et la coefficient de corrélation entre les valeurs observées et prédites.
 <details>

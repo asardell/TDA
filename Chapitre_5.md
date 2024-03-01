@@ -89,6 +89,8 @@ summary(pokemon)
 | `slice()` | Sélectionne des lignes spécifiques d'un jeu de données. | `data` : le jeu de données, `rows` : les rangs à sélectionner | `dplyr::slice(data = dataframe, rows = c(1, 3, 5))` |
 | `filter()` | Filtre les lignes d'un jeu de données en fonction de conditions spécifiques. | `data` : le jeu de données, `...` : les conditions de filtrage | `dplyr::filter(data = dataframe, col1 > 10)` |
 | `arrange()` | Trie les lignes d'un jeu de données en fonction de variables spécifiques. | `data` : le jeu de données, `...` : les variables de tri | `dplyr::arrange(data = dataframe, col1)` |
+| `is.na()` | Vérifie si les valeurs sont manquantes (NA). | `x` : vecteur ou objet à tester | `is.na(x = vecteur)` |
+| `!is.na()` | Vérifie si les valeurs ne sont pas manquantes (non-NA). | `x` : vecteur ou objet à tester | `!is.na(x = vecteur)` |
 
 ### Exercice sur les Fonctions en R
 
