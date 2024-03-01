@@ -49,6 +49,16 @@ cor(fromage[    , ls_quantiColonne   ])
 
 ## Exercice 2 - L'ACP
 
+### Mémo
+
+| Nom de la commande | Description | Arguments Pertinents | Exemple |
+|--------------------|-------------|----------------------|---------|
+| `PCA()` | Effectue une analyse en composantes principales (PCA). | `data` : données à analyser | `pca_result <- FactoMineR::PCA(data = dataframe)` |
+| `fviz_pca_ind()` | Visualise les individus dans l'espace des composantes principales (PCA). | `res_pca` : résultat de PCA<br>`geom.ind` : type de géométrie pour les individus | `factoextra::fviz_pca_ind(res_pca, geom.ind = "point")` |
+| `fviz_pca_var()` | Visualise les variables dans l'espace des composantes principales (PCA). | `res_pca` : résultat de PCA<br>`axes` : les axes à afficher | `factoextra::fviz_pca_var(res_pca, axes = c(1, 2))` |
+
+### Exercice sur les Fonctions en R
+
 :warning: Plus d'infos dans les liens utiles !
 
 1. Installer le package `factoextra` puis `FactoMineR` s'ils ne sont pas encore installés.
@@ -118,7 +128,19 @@ cor(fromage$magnesium, res.pca$ind$coord[ , 1])
 
 ## Exercice 3 - Le Clustering
 
-:warning: utiliser le tutoriel en lien utile uniquement sur la méthode des `kmeans` et `cah` pour analyser si les deux méthodes donnent les mêmes résultats
+### Mémo
+
+| Nom de la commande | Description | Arguments Pertinents | Exemple |
+|--------------------|-------------|----------------------|---------|
+| `scale()` | Centrage et réduction des données. | `x` : matrice ou cadre de données à centrer et réduire<br>`center` : si TRUE, les colonnes sont centrées<br>`scale` : si TRUE, les colonnes sont mises à l'échelle | `scaled_data <- scale(x = data_matrix, center = TRUE, scale = TRUE)` |
+| `dist()` | Calcule la distance euclidienne entre les lignes ou les colonnes d'une matrice. | `x` : matrice ou cadre de données | `dist_matrix <- dist(x = data_matrix)` |
+| `hclust()` | Effectue une classification hiérarchique ascendante sur une matrice de distances. | `d` : matrice de distances | `hc_result <- hclust(d = dist_matrix)` |
+| `rect.hclust()` | Trace des rectangles autour des groupes dans un dendrogramme. | `dendrogram` : objet dendrogramme<br>`k` : nombre de groupes à colorier | `rect.hclust(dendrogram = hc_result, k = 3)` |
+| `cutree()` | Coupe un dendrogramme en un nombre spécifié de groupes. | `tree` : objet dendrogramme<br>`k` : nombre de groupes | `groups <- cutree(tree = hc_result, k = 3)` |
+
+### Exercice sur les Fonctions en R
+
+:warning: utiliser le tutoriel en lien utile uniquement sur la méthode `cah`.
 
 <details>
 <summary>Correction</summary>
@@ -149,6 +171,15 @@ fromage$cah = groupes.cah
 
 
 ## Exercice 4 - Régression linénaire
+
+### Mémo
+
+| Nom de la commande | Description | Arguments Pertinents | Exemple |
+|--------------------|-------------|----------------------|---------|
+| `lm()` | Effectue une régression linéaire. | `formula` : formule de régression<br>`data` : jeu de données | `lm_model <- lm(formula = y ~ x1 + x2, data = dataframe)` |
+| `predict()` | Utilisé pour effectuer des prédictions à partir d'un modèle. | `object` : modèle à utiliser pour la prédiction<br>`newdata` : données pour lesquelles faire des prédictions | `predictions <- predict(object = lm_model, newdata = new_data)` |
+
+### Exercice sur les Fonctions en R
 
 1. Construire un modèle avec la fonction `lm()` pour prédire les `calories` en fonction des `lipides`.
 <details>
