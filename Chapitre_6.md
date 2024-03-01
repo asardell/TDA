@@ -91,6 +91,31 @@ attributes(res.pca)
 
 4. Reproduire les tutoriels en lien utiles mais avec les données sur les fromages.
 
+<details>
+<summary>Correction</summary>
+
+```r
+fromage = read.csv("fromage.txt", sep = "", row.names = 1)
+
+res.pca <- PCA(fromage, 
+               scale.unit = TRUE, ncp = 9, graph = TRUE)
+
+View(res.pca$ind$coord)
+fviz_eig(res.pca, addlabels = TRUE, ylim = c(0, 100))
+
+fviz_pca_ind(res.pca, col.ind = "cos2", 
+             gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07"),
+             repel = TRUE )
+
+fviz_pca_var(res.pca, col.var = "contrib",
+             gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07") )
+
+cor(fromage$magnesium, res.pca$ind$coord[ , 1])
+```
+</details>
+
+
+
 ## Exercice 3 - Le Clustering
 
 :warning: utiliser le tutoriel en lien utile uniquement sur la méthode des `kmeans` et `cah` pour analyser si les deux méthodes donnent les mêmes résultats
@@ -171,9 +196,7 @@ cor(x = fromage$calories, y = pred)
 Voici quelques liens utiles :
 
 - [Cours sur la programmation R](https://asardell.github.io/programmation-r/)
-- [ACP rapide ](http://www.sthda.com/french/articles/38-methodes-des-composantes-principales-dans-r-guide-pratique/82-acp-dans-r-avec-factominer-scripts-faciles-et-cours/)
-- [ACP en détail](http://www.sthda.com/french/articles/38-methodes-des-composantes-principales-dans-r-guide-pratique/73-acp-analyse-en-composantes-principales-avec-r-l-essentiel/)
-- [Les analyses factorielles](http://www.sthda.com/french/articles/38-methodes-des-composantes-principales-dans-r-guide-pratique/)
+- [ACP en détail](http://www.sthda.com/english/articles/31-principal-component-methods-in-r-practical-guide/112-pca-principal-component-analysis-essentials/)
 - [CAH express avec Ricco](https://eric.univ-lyon2.fr/ricco/cours/didacticiels/R/cah_kmeans_avec_r.pdf)
 
 
