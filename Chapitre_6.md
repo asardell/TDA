@@ -156,7 +156,7 @@ View(resultat)
 <summary>Correction</summary>
 
 ```r
-resultat <- select(pokemon, 2,8,9,10)
+resultat <- select(pokemon, 2,9,10,8)
 View(resultat)
 ```
 </details>
