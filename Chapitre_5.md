@@ -67,6 +67,11 @@ Ce TD utilise le fichier `velov.csv` qui décrit les statistiques des bornes vé
 
 ## Exercice 1 - Importer les données
 
+| Nom de la fonction | Description | Argument Pertinent | Exemple |
+|------------------|-------------|--------------------|---------|
+| `as.factor()` | Convertit un vecteur en facteur. | `x` : le vecteur à convertir | `as.factor(x = c("A", "B", "A", "C"))` |
+| `ifelse()` | Retourne des valeurs en fonction d'une condition. | `test` : la condition logique à évaluer, `yes` : la valeur à retourner si la condition est vraie, `no` : la valeur à retourner si la condition est fausse | `ifelse(test = x > 0, yes = "Positif", no = "Négatif")` |
+
 1. Importer le jeu de données `velov.csv` à l’aide de la fonction `read.csv()`.
 
 <details>
@@ -110,7 +115,7 @@ df$CodePostal = as.factor(df$CodePostal)
 
 ```r
 df$bornes = ifelse(df$capacity != (df$bikes + df$stands), "KO" , "OK")
-tables(df$bornes)
+table(df$bornes)
 #en réalité, c'est aussi peut-être car la station est fermée OU que des usagers ont déposé leur vélo pile au moment de l'extraction.
 ```
 </details>
