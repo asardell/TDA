@@ -199,7 +199,7 @@ View(resultat)
 
 ```r
 resultat <- arrange(pokemon, desc(attack), speed)
-resultat <- slice(resultat, 10)
+resultat <- slice(resultat, 1:10)
 View(resultat)
 ```
 </details>
