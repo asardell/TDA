@@ -535,6 +535,7 @@ print(frequence)
 <summary>Correction</summary>
 
 ```r
+effectif = table(df$bonus)
 pie(x = effectif,
     main = "Répartition du nombre \n de station bonus",
     col = c("yellow","green"))
