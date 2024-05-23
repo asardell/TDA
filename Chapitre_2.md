@@ -261,7 +261,7 @@ sd(dfAnime$Score)
 ```
 </details>
 
-7. Calculer les déciles des notes de la variable `Score` pour les deux dataframe. Quelle dataframe a le décile 1 le plus petit ?
+7. Calculer les déciles des notes de la variable `Score` pour les deux dataframe. Quel dataframe a le décile 1 le plus petit ?
 <details>
 <summary>Correction</summary>
 
