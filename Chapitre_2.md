@@ -436,6 +436,33 @@ write.table(x = dfConcat, file = ".../.../.../ExportTp1.csv",
 ```
 </details>
 
+#### Bonus : Exporter en Excel avec le package `openxlsx`
+
+1. Utiliser le package `openxlsx` pour exporter directement le dataframe dans un fichier excel.
+
+<details>
+<summary>Correction</summary>
+
+```r
+# Installer le package
+install.packages("openxlsx")
+
+# Charger le package
+library(openxlsx)
+
+# Créer un nouveau workbook
+wb <- createWorkbook()
+
+# Ajouter une feuille avec un nom spécifique
+addWorksheet(wb, "NomDeLaFeuille")
+
+# Écrire le DataFrame dans cette feuille
+writeData(wb, sheet = "NomDeLaFeuille", x = dfConcat)
+
+# Sauvegarder le workbook en fichier Excel
+saveWorkbook(wb, file = "fichier.xlsx", overwrite = TRUE)
+```
+</details>
 
 ## Liens utiles
 
