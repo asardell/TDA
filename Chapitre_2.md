@@ -140,7 +140,7 @@ mean(iris$Sepal.Length)
 <summary>Correction</summary>
 
 ```r
-median(iris$Sepal.Length)
+median(iris$Sepal.Width)
 ```
 </details>
 
