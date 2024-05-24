@@ -63,8 +63,6 @@ Ce TD utilise le fichier `velov.csv` qui décrit les statistiques des bornes vé
 - `CodePostal` indique le code postal de la localisation de la station
 - `lastUpdate` timestamp indiquant le moment de la dernière mise à jour
 
-:warning: L'ensemble des exercices sont à réaliser dans un seul script nommé `iut_sd1_r_td4`
-
 ## Exercice 1 - Importer les données
 
 | Nom de la fonction | Description | Argument Pertinent | Exemple |
