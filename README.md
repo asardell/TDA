@@ -1,4 +1,4 @@
-# IUT_SD1
+# TDA
 
 Ce document `README.md` est présent dans tous les repositories GitHub. Il permet de présenter le contenu du référentiel Git.
 Ce documet est écrit dans le cadre du module de programmation statistique sous R.
