@@ -7,24 +7,25 @@ Voici les objectifs de ce chapitre :
 - [ ] Sélection et filtre sur un dataframe 
 - [ ] Importer et exporter un dataframe
 
-1. [Les bases des dataframes](#les-bases-des-dataframes)
-   1. [Objectifs](#objectifs)
-   2. [Exercice 1 - Utilisation d'un dataframe existant un dataframe](#exercice-1---utilisation-dun-dataframe-existant-un-dataframe)
-      1. [Mémo](#mémo)
-      2. [Exercice sur les Fonctions en R](#exercice-sur-les-fonctions-en-r)
-   3. [Exercice 2 - Import/Exporter un dataframe](#exercice-2---importexporter-un-dataframe)
-      1. [Mémo](#mémo-1)
-      2. [Exercice sur les Fonctions en R](#exercice-sur-les-fonctions-en-r-1)
-         1. [La fonction `read.csv()`](#la-fonction-readcsv)
-         2. [Les fonctions `subset()`,  `table()` et `prop.table()`](#les-fonctions-subset--table-et-proptable)
-            1. [Filtre sur les Mangas](#filtre-sur-les-mangas)
-            2. [Filtre sur les Animes](#filtre-sur-les-animes)
-         3. [Les fonctions `rbind()` et `write.table()`](#les-fonctions-rbind-et-writetable)
-   4. [Liens utiles](#liens-utiles)
+- [Les bases des dataframes](#les-bases-des-dataframes)
+  - [Objectifs](#objectifs)
+  - [Exercice 1 - Utilisation d'un dataframe existant](#exercice-1---utilisation-dun-dataframe-existant)
+    - [Mémo](#mémo)
+    - [Exercice sur les Fonctions en R](#exercice-sur-les-fonctions-en-r)
+  - [Exercice 2 - Import/Exporter un dataframe](#exercice-2---importexporter-un-dataframe)
+    - [Mémo](#mémo-1)
+    - [Exercice sur les Fonctions en R](#exercice-sur-les-fonctions-en-r-1)
+      - [La fonction `read.csv()`](#la-fonction-readcsv)
+      - [Les fonctions `subset()`,  `table()` et `prop.table()`](#les-fonctions-subset--table-et-proptable)
+        - [Filtre sur les Mangas](#filtre-sur-les-mangas)
+        - [Filtre sur les Animes](#filtre-sur-les-animes)
+      - [Les fonctions `rbind()` et `write.table()`](#les-fonctions-rbind-et-writetable)
+      - [Bonus : Exporter en Excel avec le package `openxlsx`](#bonus--exporter-en-excel-avec-le-package-openxlsx)
+  - [Liens utiles](#liens-utiles)
 
     
 
-## Exercice 1 - Utilisation d'un dataframe existant un dataframe
+## Exercice 1 - Utilisation d'un dataframe existant
 
 R propose un ensemble de jeux de données intégrés qui sont souvent utilisés à des fins d'apprentissage, de démonstration et d'analyse exploratoire. Ces jeux de données couvrent une variété de domaines, de la biologie à l'économie en passant par la sociologie. Pour les lister, vous pouvez utiliser la fonction `data()` qui renvoie une liste des noms des jeux de données disponibles dans l'environnement R. Ensuite, pour accéder à un jeu de données spécifique, vous pouvez utiliser son nom comme argument pour la fonction data(), ou simplement utiliser le nom directement s'il est chargé dans votre session R.
 
@@ -40,7 +41,7 @@ R propose un ensemble de jeux de données intégrés qui sont souvent utilisés 
 | `View()` | Ouvre une visionneuse de données pour explorer un dataframe ou une matrice dans une fenêtre séparée. | Aucun | `View(dataframe)` |
 | `head()` | Affiche les premières lignes d'un dataframe ou d'une matrice. | `n` : nombre de lignes à afficher (par défaut 6) | `premieres_lignes <- head(dataframe, n = 10)` |
 | `$` | Accéder à une colonne d'un dataframe | | `df$colonneA` |
-| `[ , ]` | Accéder à certaines lignes et/ou colonnes d'un datarame. | | `dfExtraction <- df[ c(5,6), c("colonneB", "colonneD")]` |
+| `[ , ]` | Accéder à certaines lignes et/ou colonnes d'un dataframe. | | `dfExtraction <- df[ c(5,6), c("colonneB", "colonneD")]` |
 
 ### Exercice sur les Fonctions en R
 
