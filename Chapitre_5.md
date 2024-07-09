@@ -527,7 +527,7 @@ print(frequence)
 
 #### Les fonctions `pie()` et  `paste()`.
 
-8. Créer un diagramme circulaire de la réparition du nombre de station `bonus` à l'aide de la fonction `pie()` en différenciant les deux catégories avec la couleur jaune et vert. N'oublier pas de mettre un titre.
+8. Créer un diagramme circulaire de la répartition du nombre de station `bonus` à l'aide de la fonction `pie()` en différenciant les deux catégories avec la couleur jaune et vert. N'oublier pas de mettre un titre.
 
 <details>
 <summary>Correction</summary>

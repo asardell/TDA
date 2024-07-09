@@ -1,4 +1,4 @@
-# Dplyr, Ggplot2 et Esquisse
+# dplyr, Ggplot2 et Esquisse
 
 ## Objectifs
 Voici les objectifs de ce chapitre :
@@ -7,15 +7,15 @@ Voici les objectifs de ce chapitre :
 - [ ] Opération d'agrégation sur une dataframe
 - [ ] Découvrir des packages utiles (dplyr, ggplot2 et esquisse)
 
-- [Dplyr, Ggplot2 et Esquisse](#dplyr-ggplot2-et-esquisse)
+- [dplyr, Ggplot2 et Esquisse](#dplyr-ggplot2-et-esquisse)
   - [Objectifs](#objectifs)
   - [Exercice 1 - Importer les données](#exercice-1---importer-les-données)
     - [Mémo](#mémo)
     - [Exercice sur les Fonctions en R](#exercice-sur-les-fonctions-en-r)
-  - [Exercice 2 - Utiliser Dplyr pour trier et filtrer](#exercice-2---utiliser-dplyr-pour-trier-et-filtrer)
+  - [Exercice 2 - Utiliser dplyr pour trier et filtrer](#exercice-2---utiliser-dplyr-pour-trier-et-filtrer)
     - [Mémo](#mémo-1)
     - [Exercice sur les Fonctions en R](#exercice-sur-les-fonctions-en-r-1)
-  - [Exercice 3 - Utiliser Dplyr et le pipe %\>% pour agréger](#exercice-3---utiliser-dplyr-et-le-pipe--pour-agréger)
+  - [Exercice 3 - Utiliser dplyr et le pipe %\>% pour agréger](#exercice-3---utiliser-dplyr-et-le-pipe--pour-agréger)
     - [Mémo](#mémo-2)
     - [Exercice sur les Fonctions en R](#exercice-sur-les-fonctions-en-r-2)
   - [Exercice 4 - Comprendre ggplot2 avec esquisse](#exercice-4---comprendre-ggplot2-avec-esquisse)
@@ -86,7 +86,7 @@ summary(pokemon)
 ```
 </details>
 
-## Exercice 2 - Utiliser Dplyr pour trier et filtrer
+## Exercice 2 - Utiliser dplyr pour trier et filtrer
 
 ### Mémo
 | Nom de la commande | Description | Arguments Pertinents | Exemple |
@@ -265,7 +265,7 @@ View(resultat)
 ```
 </details>
 
-## Exercice 3 - Utiliser Dplyr et le pipe %>% pour agréger
+## Exercice 3 - Utiliser dplyr et le pipe %>% pour agréger
 
 ### Mémo
 | Nom de la commande | Description | Arguments Pertinents | Exemple |
@@ -381,7 +381,7 @@ esquisser()
 Voici quelques liens utiles :
 
 - [Cours sur la programmation R](https://asardell.github.io/programmation-r/)
-- [Dplyr en détail](https://juba.github.io/tidyverse/10-dplyr.html)
+- [dplyr en détail](https://juba.github.io/tidyverse/10-dplyr.html)
 - [Ggplot en détail](https://juba.github.io/tidyverse/08-ggplot2.html)
 - [Esquisse en détail](https://juba.github.io/tidyverse/08-ggplot2.html#ladd-in-esquisse)
 
