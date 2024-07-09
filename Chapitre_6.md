@@ -1,4 +1,4 @@
-# dplyr, Ggplot2 et Esquisse
+# dplyr, ggplot2 et esquisse
 
 ## Objectifs
 Voici les objectifs de ce chapitre :
@@ -7,7 +7,7 @@ Voici les objectifs de ce chapitre :
 - [ ] Opération d'agrégation sur une dataframe
 - [ ] Découvrir des packages utiles (dplyr, ggplot2 et esquisse)
 
-- [dplyr, Ggplot2 et Esquisse](#dplyr-ggplot2-et-esquisse)
+- [dplyr, ggplot2 et esquisse](#dplyr-ggplot2-et-esquisse)
   - [Objectifs](#objectifs)
   - [Exercice 1 - Importer les données](#exercice-1---importer-les-données)
     - [Mémo](#mémo)
@@ -383,7 +383,7 @@ Voici quelques liens utiles :
 - [Cours sur la programmation R](https://asardell.github.io/programmation-r/)
 - [dplyr en détail](https://juba.github.io/tidyverse/10-dplyr.html)
 - [Ggplot en détail](https://juba.github.io/tidyverse/08-ggplot2.html)
-- [Esquisse en détail](https://juba.github.io/tidyverse/08-ggplot2.html#ladd-in-esquisse)
+- [esquisse en détail](https://juba.github.io/tidyverse/08-ggplot2.html#ladd-in-esquisse)
 
 
 
