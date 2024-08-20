@@ -255,7 +255,7 @@ View(resultat)
 ```
 </details>
 
-16. Filtrez sur les pokemons qui ont des valeurs renseignées à la fois pour la variable `weight_kg` et la variable `height`.
+16. Filtrez sur les pokemons qui ont des valeurs renseignées à la fois pour la variable `weight_kg` et la variable `height_m`.
 <details>
 <summary>Correction</summary>
 
