@@ -106,15 +106,25 @@ df$CodePostal = as.factor(df$CodePostal)
 ```
 </details>
 
-4. On souhaite vérifier s'il y a des bornes indisponibles sur les stations. Il suffit de vérifier si le nombre de vélos et places disponibles est égal à la `capacity` de la station. Créer une colonne nommée `bornes` avec la valeur `OK`ou `KO` s'il y a un ou plusieurs bornes indisponibles sur une station. Combien y a-t-il de stations avec au moins une bornes HS ?
+4. On souhaite vérifier s'il y a des stations sans vélo qui sont vides. Il suffit de vérifier si le nombre de vélos  (`bikes`) de la station est égal à 0. Créer une colonne nommée `Vide` avec la valeur `Oui`ou `Non` selon s'il y a des vélos ou non. Combien y a-t-il de stations vides ?
 
 <details>
 <summary>Correction</summary>
 
 ```r
-df$bornes = ifelse(df$capacity != (df$bikes + df$stands), "KO" , "OK")
-table(df$bornes)
-#en réalité, c'est aussi peut-être car la station est fermée OU que des usagers ont déposé leur vélo pile au moment de l'extraction.
+df$Vide = ifelse(df$bikes  == 0, "Oui" , "Non")
+table(df$Vide)
+```
+</details>
+
+1. On souhaite vérifier s'il y a des stations pleines sans places pour ranger son vélo. Il suffit de vérifier si le nombre de vélos disponibles (`bikes`) est égal à la `capacity` de la station. Créer une colonne nommée `Surcharge` avec la valeur `Oui`ou `Non` selon s'il ne reste aucune place. Combien y a-t-il de stations surchargées ?
+
+<details>
+<summary>Correction</summary>
+
+```r
+df$Surcharge = ifelse(df$capacity == df$bikes, "Oui" , "Oui")
+table(df$Surcharge)
 ```
 </details>
 
