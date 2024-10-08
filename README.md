@@ -21,7 +21,7 @@ Voici les objectifs de ce module :
 3. Chapitre 3 : Importer et manipulation de dataframe
 4. Chapitre 4 : Rappel et cas pratique (FACULTATIF)
 5. Chapitre 5 : Création et personnalisation de graphiques élémentaires
-5. Chapitre 6 : Dplyr, Ggplot2 et Esquisse
+5. Chapitre 6 : dplyr, dgplot2 et esquisse
 6. Chapitre 7 : Analyses multidimensionnelles (ACP, Clustering, Régression)
 7. Chapitre 8 : Algorithmique
 8. Chapitre 9 : Gestion des dates et chaîne de caractères
