@@ -117,7 +117,7 @@ table(df$Vide)
 ```
 </details>
 
-1. On souhaite vérifier s'il y a des stations pleines sans places pour ranger son vélo. Il suffit de vérifier si le nombre de vélos disponibles (`bikes`) est égal à la `capacity` de la station. Créer une colonne nommée `Surcharge` avec la valeur `Oui`ou `Non` selon s'il ne reste aucune place. Combien y a-t-il de stations surchargées ?
+5. On souhaite vérifier s'il y a des stations pleines sans places pour ranger son vélo. Il suffit de vérifier si le nombre de vélos disponibles (`bikes`) est égal à la `capacity` de la station. Créer une colonne nommée `Surcharge` avec la valeur `Oui`ou `Non` selon s'il ne reste aucune place. Combien y a-t-il de stations surchargées ?
 
 <details>
 <summary>Correction</summary>
