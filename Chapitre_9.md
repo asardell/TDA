@@ -5,11 +5,11 @@ Voici les objectifs de ce TD :
 - [ ] Comprendre les formats date et time
 - [ ] Comprendre comment manipuler les chaînes de caractères
 
-1. [Gestion des dates et chaîne de caractères](#gestion-des-dates-et-chaîne-de-caractères)
-   1. [Objectifs](#objectifs)
-   2. [Exercice 1 - Les formats date](#exercice-1---les-formats-date)
-   3. [Exercice 2 - Parcourir le lien utile sur les chaînes de caratctères](#exercice-2---parcourir-le-lien-utile-sur-les-chaînes-de-caratctères)
-   4. [Liens utiles](#liens-utiles)
+- [Gestion des dates et chaîne de caractères](#gestion-des-dates-et-chaîne-de-caractères)
+  - [Objectifs](#objectifs)
+  - [Exercice 1 - Les formats date](#exercice-1---les-formats-date)
+  - [Exercice 2 - Parcourir le lien utile sur les chaînes de caractères](#exercice-2---parcourir-le-lien-utile-sur-les-chaînes-de-caractères)
+  - [Liens utiles](#liens-utiles)
 
 
 ## Exercice 1 - Les formats date
@@ -43,7 +43,7 @@ data$V8 <- as.POSIXct(data$V8, format = "%A, %B %d, %Y %H:%M:%S", tz = "UTC")
 ```
 </details>
 
-## Exercice 2 - Parcourir le lien utile sur les chaînes de caratctères
+## Exercice 2 - Parcourir le lien utile sur les chaînes de caractères
 
 ## Liens utiles
 
@@ -51,7 +51,7 @@ Voici quelques liens utiles :
 
 - [Cours sur la programmation R](https://asardell.github.io/programmation-r/)
 - [Focus sur les dates](https://asardell.github.io/programmation-r/chaines.html#manipulation-des-dates)
-- [Les chaînes de caratctères](https://asardell.github.io/programmation-r/chaines.html#manipulation-des-cha%C3%AEnes-de-caract%C3%A8res)
+- [Les chaînes de caractères](https://asardell.github.io/programmation-r/chaines.html#manipulation-des-cha%C3%AEnes-de-caract%C3%A8res)
 
 
 
